@@ -10,3 +10,5 @@ ENV TZ Asia/Tokyo
 RUN echo "${TZ}" > /etc/timezone \
     && dpkg-reconfigure -f noninteractive tzdata
 COPY conf/default.conf /etc/nginx/conf.d/default.conf
+COPY ssl_keys/localhost.pem /etc/pki/tls/certs/example_com_combined.crt
+COPY ssl_keys/localhost-key.pem /etc/pki/tls/private/example_com.key

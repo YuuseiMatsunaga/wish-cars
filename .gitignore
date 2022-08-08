@@ -1,3 +1,5 @@
 .env
 /api/tmp
 .vscode
+localhost-key.pem
+localhost.pem

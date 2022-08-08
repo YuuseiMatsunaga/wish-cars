@@ -13,6 +13,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@auth0/auth0-vue": "^1.0.2",
+    "@nuxtjs/auth-next": "^5.0.0-1648802546.c9880dc",
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
@@ -39,6 +41,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "ts-jest": "^27.0.3",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "vue-router": "^3.0"
   }
 }

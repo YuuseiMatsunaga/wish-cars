@@ -40,6 +40,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 80:80
+      - 443:443
     tty: true
     restart: always
     depends_on:
