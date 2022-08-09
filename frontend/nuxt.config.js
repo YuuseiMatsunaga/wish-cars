@@ -55,7 +55,7 @@ export default {
       auth0: {
         domain: 'dev-517zxpks.us.auth0.com',
         clientId: 'RwvHqlVGkt1C4HQcbK1xKKloXtZx5pPc',
-        audience: 'https://my-api-domain.com/',
+        audience: 'https://dev-517zxpks.us.auth0.com/api/v2/',
         scope: ['openid', 'profile', 'email', 'offline_access'],
         responseType: 'code',
         grantType: 'authorization_code',
@@ -64,7 +64,7 @@ export default {
     },
     redirect: {
       login: '/login',
-      logout: '/logout',
+      logout: '/',
       callback: '/callback',
       home: '/'
     },
