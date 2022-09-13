@@ -1,11 +1,3 @@
 <template>
-  <div>
-    callback..
-  </div>
+    <div></div>
 </template>
-
-<script>
-export default {
-  name: 'CallbackPage'
-}
-</script>

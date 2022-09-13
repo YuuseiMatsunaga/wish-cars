@@ -4,6 +4,20 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  router: {
+    extendRoutes(routes) {
+      routes.push(
+        { path: '/callback', redirect: '/' },
+      )
+    }
+  },
+
+  // env
+  publicRuntimeConfig: {
+    imageURL: process.env.IMAGE_URL || ''
+  },
+
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - frontend',
@@ -63,7 +77,7 @@ export default {
       }
     },
     redirect: {
-      login: '/login',
+      login: '/',
       logout: '/',
       callback: '/callback',
       home: '/'
@@ -77,7 +91,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      primary: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
